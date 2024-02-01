@@ -1,4 +1,4 @@
-package Search_Algorithms;
+package Search_Algorithms.Linear_Search;
 
 
 public class LinearSearch {

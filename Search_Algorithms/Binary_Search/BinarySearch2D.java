@@ -1,4 +1,4 @@
-package Search_Algorithms;
+package Search_Algorithms.Binary_Search;
 
 public class BinarySearch2D {
     
