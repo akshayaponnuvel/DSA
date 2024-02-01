@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     // Space Complexity is O(1) - this doesnot take any extr space
-    // Time complexity id O(N^2)
+    // Time complexity is O(N^2)
 
     public static void main(String[] args) {
         int[] arr={9,8,7,6,5,4,3,2,1};
