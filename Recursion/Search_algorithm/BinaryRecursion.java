@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Search_algorithm;
 
 public class BinaryRecursion {
     
