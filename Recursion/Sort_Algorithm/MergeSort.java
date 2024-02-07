@@ -3,7 +3,7 @@ package Recursion.Sort_Algorithm;
 import java.util.Arrays;
 
 // O(N*log N) - Time Complexity
-// Space Complexity - O(1)
+// Space Complexity - O(N)
 
 public class MergeSort{
 
@@ -57,6 +57,4 @@ public class MergeSort{
         }
         return ans;
     }
-
-    
-} 
+}
