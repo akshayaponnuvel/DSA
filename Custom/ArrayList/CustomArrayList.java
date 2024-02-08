@@ -1,4 +1,4 @@
-package Custom;
+package Custom.ArrayList;
 import java.util.Arrays;
 
 public class CustomArrayList {

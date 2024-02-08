@@ -1,3 +1,4 @@
+package Custom.ArrayList;
 
 import java.util.Arrays;
 
@@ -63,7 +64,7 @@ public class CustomArrayListGenerics<T> {
 
     public static void main(String[] args) {
 
-        CustomArrayList<String> a=new CustomArrayList<>();
+        CustomArrayListGenerics<String> a=new CustomArrayListGenerics<>();
 
         for(int i=0;i<5;i++){
             a.add("hello");
