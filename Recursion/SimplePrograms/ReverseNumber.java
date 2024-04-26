@@ -10,6 +10,7 @@ public class ReverseNumber {
 
         reverse(n);
         System.out.println(sum);
+        
     }
 
     static int sum=0;

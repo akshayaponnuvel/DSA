@@ -10,6 +10,7 @@ public class SumOfDigits {
 
         int ans=sum(n);
         System.out.println(ans);
+        
     }
 
     private static int sum(int n) {
