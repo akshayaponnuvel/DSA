@@ -2,7 +2,7 @@ package Round2;
 
 public class NearestVowel {
     public static void main(String[] args) {
-        String input = "PhonE";
+        String input = "ponnuvel";
         String output = replaceConsonantsWithNearestVowel(input);
         System.out.println(output); 
     }
@@ -56,3 +56,6 @@ public class NearestVowel {
         return nearestVowel;
     }
 }
+
+    
+
