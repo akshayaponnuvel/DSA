@@ -1,36 +1,49 @@
 package Round2;
 
+import java.util.Arrays;
+
 public class PrintMatrix {
-    
     public static void main(String[] args) {
-        int[][] arr={{5,6,15,16,25},
-                     {4,7,14,17,24},
-                     {3,8,13,18,23},
-                     {2,9,12,19,22},
-                     {1,10,11,20,21}};
+        int[][] arr = {
+                {5, 6, 15, 16, 25},
+                {4, 7, 14, 17, 24},
+                {3, 8, 13, 18, 23},
+                {2, 9, 12, 19, 22},
+                {1, 10, 11, 20, 21}
+        };
 
-       int[] index={0,0};
+        int[] nums = new int[5 * 5];
+        int row = 4;
+        int col = 0;
+        int rowStart = 0, rowEnd = arr.length;
+        int colStart = 0, colEnd = arr[0].length;
+        int count = 0;
 
-       int a=index[0];
-       int b=index[1];
-
-       if (a==0) {
-        printDownwards(arr ,a ,b);
-       }
-       else{
-        printUpwards(arr);
-       }
-    }
-
-    private static void printDownwards(int[][] arr , int a ,int b)  {
-        for (int i = a; i < arr.length; i++) {
-            for (int j = b; j < arr[i].length; j++) {
-                System.out.print(arr[j][i] + " ");
+        while (count < 5 * 5) {
+            if (row != 0) {
+                for (int i = row; i >= 0; i--) {
+                    nums[count++] = arr[i][col % colEnd];
+                }
+                col = (col + 1) % colEnd;
+                if (count < 5 * 5) {
+                    for (int i = rowStart; i <= row; i++) {
+                        nums[count++] = arr[i][col % colEnd];
+                    }
+                    col = (col + 1) % colEnd;
+                }
+            } else {
+                for (int i = row; i < arr.length; i++) {
+                    nums[count++] = arr[i][col % colEnd];
+                }
+                col = (col + 1) % colEnd;
+                if (count < 5 * 5) {
+                    for (int i = colEnd - 1; i >= 0; i--) {
+                        nums[count++] = arr[i][col % colEnd];
+                    }
+                    col = (col + 1) % colEnd;
+                }
             }
         }
-    }
-
-    private static void printUpwards(int[][] arr) {
-
+        System.out.println(Arrays.toString(nums));
     }
 }

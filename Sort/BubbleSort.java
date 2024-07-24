@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BubbleSort {
 
-    // Space Complexity is O(1) - this doesnot take any extr space
+    // Space Complexity is O(1) - this doesnot take any extra space
     // Time complexity is O(N^2)
 
     public static void main(String[] args) {
